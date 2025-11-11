@@ -12,8 +12,8 @@ noBtn.addEventListener("mouseover", () => {
 });
 
 // When "Yes" is clicked
-yes-button.addEventListener("click", () => {
-   yes-button.textContent = "I love you my jaan, Mood ta thik koro, Biye ami tomakey korbo ! 💖💍";
+yesBtn.addEventListener("click", () => {
+    yesBtn.textContent = "Yaaay! 💖💍";
     createHearts();
 });
 
