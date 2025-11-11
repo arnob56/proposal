@@ -8,6 +8,7 @@ body {
     font-family: 'Poppins', sans-serif;
     color: white;
     overflow: hidden;
+    position: relative;
 }
 
 .container {
@@ -38,6 +39,7 @@ h1, p, h2 {
 
 .buttons {
     margin-top: 30px;
+    position: relative; /* ensures buttons position relative to each other */
 }
 
 button {
@@ -48,6 +50,7 @@ button {
     cursor: pointer;
     margin: 10px;
     transition: 0.3s;
+    z-index: 3;
 }
 
 #yesBtn {
@@ -62,6 +65,10 @@ button {
     background: #fff;
     color: #ff1493;
     position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
 }
 
 #hearts {
@@ -73,14 +80,8 @@ button {
     overflow: hidden;
     pointer-events: none;
 }
-.heart {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background: url('heart.png') no-repeat center center;
-    background-size: contain;
-    animation: floatUp 4s linear infinite;
-}
+
+/* Floating hearts animation */
 .heart {
     position: absolute;
     bottom: 0;
@@ -97,7 +98,4 @@ button {
         transform: translateY(-100vh);
         opacity: 0;
     }
-}
-#noBtn:hover {
-    transform: translateX(-100px) translateY(-50px);
 }
