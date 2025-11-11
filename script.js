@@ -13,7 +13,7 @@ noBtn.addEventListener("mouseover", () => {
 
 // When "Yes" is clicked
 yesBtn.addEventListener("click", () => {
-    yesBtn.textContent = "Yaaay! 💖💍";
+    yesBtn.textContent = "I love you! 💖, Mood thik koro jaan 💖";
     createHearts();
 });
 
