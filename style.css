@@ -50,10 +50,12 @@ button {
     transition: 0.3s;
 }
 
-#yes-button {
+#yesBtn {
     background: #ff1493;
     color: white;
     box-shadow: 0 0 15px rgba(255, 20, 147, 0.6);
+    position: relative; /* keep it clickable */
+    z-index: 5;
 }
 
 #noBtn {
