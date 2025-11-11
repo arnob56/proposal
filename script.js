@@ -17,6 +17,14 @@ yesBtn.addEventListener("click", () => {
     createHearts();
 });
 
+noBtn.addEventListener("mouseover", () => {
+    const x = Math.random() * (window.innerWidth - noBtn.offsetWidth - 50);
+    const y = Math.random() * (window.innerHeight - noBtn.offsetHeight - 50);
+    noBtn.style.left = `${x}px`;
+    noBtn.style.top = `${y}px`;
+});
+
+
 // Floating hearts animation
 function createHearts() {
     for (let i = 0; i < 50; i++) {
